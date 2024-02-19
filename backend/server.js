@@ -17,9 +17,14 @@ app.get("/", async (req, res, next) => {
   res.json({ message: "API running..." });
 });
 
+const connectDB = require ("./config/firestore")
+
+
 // mongodb connection
 // const connectDB = require("./config/db");
 // connectDB();
+
+
 
 app.use("/api", apiRoutes);
 
