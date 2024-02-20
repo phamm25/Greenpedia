@@ -11,6 +11,6 @@ let user = db.collection("Users")
 
 user.get().then((querySnapshot) => {
     querySnapshot.forEach(element => {
-        console.log(element)
+        console.log('firebase element: ',element)
     });
 })
